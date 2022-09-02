@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/blathers-monterey/static/css/main.dc187e75.css",
+    "main.js": "/blathers-monterey/static/js/main.e2050a0d.js",
+    "static/js/787.78e02b50.chunk.js": "/blathers-monterey/static/js/787.78e02b50.chunk.js",
+    "static/media/ARLRDBD.ttf": "/blathers-monterey/static/media/ARLRDBD.92db065b25b7acb38124.ttf",
+    "index.html": "/blathers-monterey/index.html",
+    "main.dc187e75.css.map": "/blathers-monterey/static/css/main.dc187e75.css.map",
+    "main.e2050a0d.js.map": "/blathers-monterey/static/js/main.e2050a0d.js.map",
+    "787.78e02b50.chunk.js.map": "/blathers-monterey/static/js/787.78e02b50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc187e75.css",
+    "static/js/main.e2050a0d.js"
+  ]
+}
