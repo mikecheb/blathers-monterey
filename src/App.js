@@ -112,9 +112,13 @@ function App() {
 
   const entries = DATA.map(e => <Entry checked={checked.has(e.id)} data={e} toggleEntry={toggleEntry} key={e.id} />);
   return (
-    <>
+    <div>
+      <div className="header">
+        <img className="header__monterey" src="assets/monterey.png" />
+        <img className="header__blathers" src="assets/blathers-full.png" />
+      </div>
       {entries}
-    </>
+    </div>
   );
 }
 

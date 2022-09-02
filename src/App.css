@@ -9,6 +9,25 @@ body {
   font-weight: bold;
 }
 
+.header {
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__monterey {
+  height: 100%;
+}
+
+.header__blathers {
+  height: 72px;
+  position: relative;
+  top: 20px;
+  left: -15px;
+  transform: scaleX(-1);
+}
+
 .entry {
   background: #EEE3B5;
 }
