@@ -129,17 +129,17 @@ const Entry = (props) => {
   return (
     <div className="entry">
       <div className="entry__header" onClick={() => setIsOpen(!isOpen)}>
-        <img className="entry__image" src={`/assets/entries/${props.data.icon}`} />
+        <img className="entry__image" src={`assets/entries/${props.data.icon}`} />
         {props.data.name}
         <div className="entry__spacer" />
         <button className="entry__button" onClick={toggleVisit}>
-          {props.checked && <img src="/assets/logo.png" />}
+          {props.checked && <img src="assets/logo.png" />}
         </button>
       </div>
       <div className={`entry__blurb ${isOpen ? "open" : ""}`}>
         <div className="entry__joke">{props.data.joke}</div>
         <div className="entry__blathers">
-          <img className="blathers" src="/assets/blathers.png" />
+          <img className="blathers" src="assets/blathers.png" />
           <span>
             {props.data.blurb}
           </span>
