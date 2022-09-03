@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/blathers-monterey/static/css/main.2e8eec3e.css",
-    "main.js": "/blathers-monterey/static/js/main.19a4c349.js",
+    "main.css": "/blathers-monterey/static/css/main.7887a0b6.css",
+    "main.js": "/blathers-monterey/static/js/main.337527ca.js",
     "static/js/787.78e02b50.chunk.js": "/blathers-monterey/static/js/787.78e02b50.chunk.js",
     "static/media/ARLRDBD.ttf": "/blathers-monterey/static/media/ARLRDBD.92db065b25b7acb38124.ttf",
     "index.html": "/blathers-monterey/index.html",
-    "main.2e8eec3e.css.map": "/blathers-monterey/static/css/main.2e8eec3e.css.map",
-    "main.19a4c349.js.map": "/blathers-monterey/static/js/main.19a4c349.js.map",
+    "main.7887a0b6.css.map": "/blathers-monterey/static/css/main.7887a0b6.css.map",
+    "main.337527ca.js.map": "/blathers-monterey/static/js/main.337527ca.js.map",
     "787.78e02b50.chunk.js.map": "/blathers-monterey/static/js/787.78e02b50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e8eec3e.css",
-    "static/js/main.19a4c349.js"
+    "static/css/main.7887a0b6.css",
+    "static/js/main.337527ca.js"
   ]
 }
