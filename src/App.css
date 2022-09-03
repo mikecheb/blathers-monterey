@@ -84,7 +84,8 @@ body {
 }
 
 .entry:first-of-type .entry__header {
-  border-radius: 15px 15px 0 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .entry:last-of-type {
@@ -93,7 +94,8 @@ body {
 
 .entry:last-of-type,
 .entry:last-of-type .entry__blurb {
-  border-radius: 0 0 15px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .entry__image {
