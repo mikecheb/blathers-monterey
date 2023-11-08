@@ -3,7 +3,6 @@ import './App.css';
 import { DATA, EXHIBITS, MAPPINGS } from './data.js';
 
 // TODO Should visiting each variant be handled separately?
-// TODO Add debug functions
 function App() {
   // Store visited state globally.
   const [checked, setChecked] = React.useState(new Set(JSON.parse(localStorage.getItem('visited'))));
@@ -18,6 +17,34 @@ function App() {
     localStorage.setItem("visited", JSON.stringify([...newChecked]));
     setChecked(newChecked);
   }
+
+  // DEBUG
+  // Make sure there are no duplicate fields.
+  const ids = Object.keys(DATA);
+  for (let i = 0; i < ids.length; i++) {
+    const entry = DATA[ids[i]];
+    const props = Object.keys(entry);
+    props.forEach((prop) => {
+      for (let j = i + 1; j < ids.length; j++) {
+        if (entry[prop] === DATA[ids[j]][prop]) {
+          console.log(`duplicate prop found: ${entry[prop]}`);
+        }
+      }
+    });
+  }
+  // Make sure every entry is in at least one exhibit.
+  const usedIDs = new Set();
+  EXHIBITS.forEach((exhibitName) => {
+    const entries = MAPPINGS[exhibitName];
+    entries.forEach(e => usedIDs.add(e.id));
+  })
+  for (let i = 0; i < ids.length; i++) {
+    if (!usedIDs.has(ids[i])) {
+      console.log(`${ids[i]} not used`)
+    }
+  }
+
+
 
   const exhibits = EXHIBITS.filter(ex => MAPPINGS[ex].length);
   const elements = exhibits.map((ex) => {
